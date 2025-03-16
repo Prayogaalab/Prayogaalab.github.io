@@ -47,28 +47,63 @@
                </div>
           </div>
      </section>
-
+     <style>
+          .carousel-container {
+              width: 60%; /* Adjust width as needed */
+              margin: auto;
+              padding: 20px;
+              border: 2px solid #ddd;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              background-color: #fff;
+          }
+          .carousel-inner .item img {
+              width: 100%;
+              height: auto;
+              border-radius: 10px;
+          }
+          .carousel-caption {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background: rgba(0, 0, 0, 0.5);
+              padding: 10px 20px;
+              border-radius: 5px;
+          }
+      </style>
      <!-- IMAGE SLIDER -->
     
-     <div id="carouselExample" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-               <div class="item active">
-                    <img src="../images/Learn.jpg"class="d-block w-100" alt="Slide 1">
-               </div>
-               <div class="item">
-                    <img src="../images/10results.jpg" class="d-block w-100" alt="Slide 2">
-               </div>
-               <div class="item">
-                    <img src="../images/10results.jpg" class="d-block w-100" alt="Slide 3">
-               </div>
+     <div class="carousel-container">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <img src="../images/Learn.jpg" alt="Slide 1">
+                      <div class="carousel-caption">
+                          <h3>Learn New Skills</h3>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="../images/10results.jpg" alt="Slide 2">
+                      <div class="carousel-caption">
+                          <h3>Achieve Your Goals</h3>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <img src="../images/10results.jpg" alt="Slide 3">
+                      <div class="carousel-caption">
+                          <h3>See The Results</h3>
+                      </div>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#carouselExample" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#carouselExample" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
           </div>
-          <a class="left carousel-control" href="#carouselExample" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-          </a>
-          <a class="right carousel-control" href="#carouselExample" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right"></span>
-          </a>
-     </div>
+      </div>
     
 
     <!-- Results -->         
